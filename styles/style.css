@@ -47,83 +47,207 @@
   line-height: 24.3px;
 }
 
+/* COVER */
 .cover {
   height: 745px;
   background-image: url(../images/cover.jpg);
   background-size: cover;
   background-position: center;
   margin: 0px 8px;
+  background-repeat: no-repeat;
+  
 }
 
-.cover__text{
-padding-top: 163px;
-padding-left: 48px; /* FIGMA */
-padding-right: 50px; /*FIGMA*/
-font-size: 100px;
+.overlay {
+  opacity: 0.6;
+  background: #000;
+  /* height: 745px; */
+  flex-shrink: 0;
+}
+
+.overlay-cover{
+  height: 745px;
+}
+
+/* COVER TEXT */
+.cover__text {
+  padding-top: 162px;
+  font-size: 100px;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.cover__text-accent {
+  display: block;
+}
+
+.cover__text-left {
+  padding-left: 48px;
+  text-align: left;
+  line-height: 115%;
+}
+
+.cover__text-left-one {
+  letter-spacing: 6px;
+}
+
+.cover__text-left-two {
+  letter-spacing: 60px;
+}
+
+.cover__text-center {
+  padding-top: 17px;
+  line-height: 100%;
+  padding-left: 331px;
+}
+
+.cover__text-center-one {
+  letter-spacing: 4px;
+}
+
+.cover__text-center-two {
+  letter-spacing: 6px;
+}
+
+.cover__text-center-three {
+  letter-spacing: 33px;
+}
+
+.cover__text-right {
+  padding-top: 19px;
+  text-align: right;
+  line-height: 100%;
+  padding-right: 48px;
+}
+
+.cover__text-right-one {
+  letter-spacing: 35px;
+}
+
+.cover__text-right-two {
+  letter-spacing: 4px;
+}
+
+.cover__text-right-three {
+  letter-spacing: 4px;
+}
+
+.cover__text-right-four {
+  letter-spacing: 2px;
+}
+
+/* COVER BOTTOM */
+
+.cover__bottom{
+  padding-top: 133px;
+padding-left: 81px;
+padding-right: 50px;
+font-size: 22px;
+font-weight: 400;
+text-transform: uppercase;
+/* color: #fff; */
+}
+
+.cover__bottom-text{
+  display: inline-block;
+  line-height: 28px;
+  color: #fff;
+  word-spacing: 17px;
+}
+.cover__bottom-text-one{
+  padding-left: 5px;
+}
+
+.cover__bottom-button{
+  margin-left: 62px;
+  border: 1px solid #FFF;
+display: inline-block;
+text-transform: uppercase;
+width: 252px;
+height: 52px;
+font-size: 22px;
+flex-shrink: 0;
+background: transparent;
 color: #fff;
+margin-top: -2px;
+}
+
+.cover__bottom-button:hover {
+  cursor: pointer;
+}
+
+.lots{
+ margin: 176px 33px;
+}
+
+.lots__header{
+padding-left: 37px;
+color: #000;
+font-size: 40px;
 font-weight: 700;
 text-transform: uppercase;
 }
 
-.cover__text-accent{
-    display: block;
+.lots__cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+  gap: 25px;
 }
 
-.cover__text-left{
-    text-align: left;
-    line-height: 115%;
+/* .overlay-card{
+width: 328px;
+height: 554px;
+flex-shrink: 0;
+background: rgba(0, 0, 0, 0.60);
+} */
+
+.lots__card{
+margin-top: 26px;
+height: 554px;
+position: relative;
 }
 
-.cover__text-left-one{
-    text-align: left;
-    letter-spacing: 60px;
-    padding-left: 6px;
-    /* padding-right: 20px; */
+.lots__card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.60);
+
 }
 
-
-
-.cover__text-center{
-    padding-top: 17px;
-    text-align: center;
-    line-height: 100%;
-    padding-left: 40px;
-    /* letter-spacing: 28px; */
-}
-
-.cover__text-center-one{
-    letter-spacing: 30px;
-}
-
-.cover__text-center-two{
-    letter-spacing: 57px;
-}
-
-.cover__text-center-three{
-    letter-spacing: 60px;
-    /* padding-left: 95px; */
-}
-
-
-
-.cover__text-right{
-    padding-top: 18px;
-    text-align: right;
-    line-height: 100%;
-    /* letter-spacing: 7px; */
-}
-
-.cover__text-right-one{
-    padding-left: 40px;
-    /* letter-spacing: 6px; */
-}
-
-.cover__text-right-two{
-    /* letter-spacing: 2px; */
+.lots__card-one{
+  background-image: url(../images/card-lot-01.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: end;
 }
 
 
+.lots__card-one>h3{
+  color: #FFF;
+font-family: Raleway;
+font-size: 22px;
+font-style: normal;
+font-weight: 700;
+line-height: 120%; /* 26.4px */
+text-decoration-line: underline;
+text-transform: uppercase;
+}
 
+.lots__card-two{
+  background-image: url(../images/card-lot-02.jpg);
+  background-size: cover;
+}
 
+.lots__card-three{
+  background-image: url(../images/card-lot-03.jpg);
+  background-size:auto;
+  background-repeat: no-repeat;
+}
 
 

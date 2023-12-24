@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
+    <!--HEADER-->
     <header class="header">
       <nav class="header__menu">
         <ul class="header__links-list">
@@ -24,7 +25,7 @@
           </li>
         </ul>
       </nav>
-      <a class="header__logo">
+      <a class="header__logo" href="#0">
         <img
           class="header__logo-image"
           src="./images/logo-black.svg"
@@ -47,30 +48,58 @@
       </div>
     </header>
     <main class="main">
+      <!--COVER START-->
       <div class="cover">
-        <h1 class="cover__text">
-          <span class="cover__text-accent cover__text-left">
-            О
-            <span class="cover__text-left-one">НО</span>
-          </span>
-          <span class="cover__text-accent cover__text-center">
-            Т
-            <span class="cover__text-center-one">Е</span>
-            <span class="cover__text-center-two">Б</span>
-            <span class="cover__text-center-three">Е</span>
-          </span>
-          <span class="cover__text-accent cover__text-right">
-            Н
-            <span class="cover__text-right-one">АД</span>
-            <span class="cover__text-right-two">О</span>
-          </span>
-        </h1>
+        <div class="overlay overlay-cover">
+          <h1 class="cover__text">
+            <span class="cover__text-accent cover__text-left">
+              <span class="cover__text-left-one">О</span>
+              <span class="cover__text-left-two">НО</span>
+            </span>
+            <span class="cover__text-accent cover__text-center">
+              <span class="cover__text-center-one">Т</span>
+              <span class="cover__text-center-two">Е</span>
+              <span class="cover__text-center-three">Б</span>
+              <span class="cover__text-center-four">Е</span>
+            </span>
+            <span class="cover__text-accent cover__text-right">
+              <span class="cover__text-right-one">Н</span>
+              <span class="cover__text-right-two">А</span>
+              <span class="cover__text-right-three">Д</span>
+              <span class="cover__text-right-four">О</span>
+            </span>
+          </h1>
+          <div class="cover__bottom"> 
+            <p class="cover__bottom-text">
+              Аукцион вещей, в которые никто не 
+              <span class="cover__bottom-text-one">верил</span>
+            </p>
+            <button class="cover__bottom-button"> Сделать ставку</button> 
+          </div>
+        </div>
       </div>
-      <div class="lots"></div>
+      <!--COVER END-->
+
+       <!--LOTS START-->
+      <div class="lots">
+        <h2 class="lots__header"> 
+          Лоты
+        </h2>
+        <div class="lots__cards ">
+          <div class="lots__card lots__card-one">
+              <h3> 
+                Фильм режиссёра, который  бросил киношколу
+              </h3>
+          </div>
+          <div class="lots__card lots__card-two">
+          </div>
+          <div class="lots__card lots__card-three">
+          </div>
+        </div>
+      </div>
       <div class="about"></div>
     </main>
     <footer class="footer"></footer>
   </body>
 </html>
 
-sdfdsfds
