@@ -1,1 +1,1 @@
-https://gerts-official.github.io/ono-tebe-nado/
+https://github.com/Gerts-official/ono-tebe-nado
