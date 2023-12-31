@@ -10,18 +10,19 @@
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
+    <!--Проверяй без пощады! ;)-->
     <!--HEADER-->
-    <header class="header">
+    <header class="header" id="header">
       <nav class="header__menu">
         <ul class="header__links-list">
-          <li class="header__links-list-item no-bullit">
-            <a class="no-underline" href="#0">главная</a>
+          <li class="header__links-list-item header__links-list-item_no-bullit">
+            <a class="header__link header__link_no-underline" href="#header">главная</a>
           </li>
           <li class="header__links-list-item">
-            <a href="#0">посмотреть лоты </a>
+            <a class="header__link" href="#lots">посмотреть лоты </a>
           </li>
           <li class="header__links-list-item">
-            <a href="#0">об аукционе</a>
+            <a class="header__link" href="#about">об аукционе</a>
           </li>
         </ul>
       </nav>
@@ -32,25 +33,21 @@
           alt="Лого черными буквами на белом фоне"
         />
       </a>
-      <div class="address address-header">
-        <p>
-          <a class="address-item" href="tel:+99995555555">+9 999 555 5555</a>
+      <address class="address-header">
+          <a class="address-item" href="tel:+99995555555">
+            +9 999 555 5555
+          </a>
+          <a class="address-item" href="mailto:info@sobaka.ge">
+            info@sobaka.ge
+          </a>
+        <p class="address-item">
+          наб. Принсенграхт 263-265, Амстердам
         </p>
-        <p>
-          <a class="address-item" href="mailto:info@sobaka.ge"
-            >info@sobaka.ge</a
-          >
-        </p>
-        <address>
-          наб. Принсенграхт 263-265,<br />
-          Амстердам
-        </address>
-      </div>
+      </address>
     </header>
     <main class="main">
       <!--COVER-->
-      <div class="header__cover">
-        <div class="overlay overlay-cover">
+      <section class="header__cover">
           <h1 class="cover__text">
             <span class="cover__text-accent cover__text-left">
               <span class="cover__text-left-one">О</span>
@@ -76,13 +73,13 @@
             </p>
             <button class="cover__bottom-button">Сделать ставку</button>
           </div>
-        </div>
-      </div>
+
+      </section>
       <!--LOTS-->
-      <div class="lots">
+      <section class="lots" id="lots">
         <h2 class="lots__header">Лоты</h2>
         <div class="lots__cards">
-          <div class="lots__card lots__card-one">
+          <article class="lots__card lots__card-one">
             <h3 class="lots__card-header">
               Фильм режиссёра, который бросил киношколу
             </h3>
@@ -90,8 +87,8 @@
               Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
               ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
             </p>
-          </div>
-          <div class="lots__card lots__card-two">
+          </article>
+          <article class="lots__card lots__card-two">
             <h3 class="lots__card-header">
               Книга, где описан один скучный день из жизни рекламного агента
             </h3>
@@ -102,8 +99,8 @@
               времён. И это всё накладывается на эпическую поэму Гомера. Сколько
               бы вы поставили на «Улисса» Джеймса Джойса?
             </p>
-          </div>
-          <div class="lots__card lots__card-three">
+          </article>
+          <article class="lots__card lots__card-three">
             <h3 class="lots__card-header">
               Картина, которую повторит даже 5-летний сын маминой подруги
             </h3>
@@ -113,14 +110,14 @@
               Сколько бы вы на такое поставили, если бы не знали, что это — одна
               из революционных работ Кандинского?
             </p>
-          </div>
+          </article>
         </div>
         <a class="lots__footer" href="#0"> посмотреть больше </a>
-      </div>
+      </section>
       <!--ABOUT-->
-      <div class="about">
+      <section class="about" id="about">
         <div class="about__logo-cover">
-          <img src="./images/logo-white.svg" alt="Лого белыми буквами на черном фоне" />
+          <img class="about__logo-cover-img" src="./images/logo-white.svg" alt="Лого белыми буквами на черном фоне" />
         </div>
         <div class="about__section">
           <h2 class="about__section-header">Об аукционе</h2>
@@ -143,34 +140,31 @@
             </p>
           </div>
         </div>
-      </div>
+      </section>
     </main>
     <!--FOOTER-->
     <footer class="footer">
-      <div class="address address-footer">
-        <p>
-          <a class="address-item" href="tel:+99995555555"> +9 999 555 5555 </a>
-        </p>
-        <p>
-          <a class="address-item" href="mailto:info@sobaka.ge">
-            info@sobaka.ge
-          </a>
-        </p>
-        <address>
-          наб. Принсенграхт 263-265,<br />
-          Амстердам
-        </address>
-      </div>
+      <address class="address-footer">
+        <a class="address-item" href="tel:+99995555555">
+          +9 999 555 5555
+        </a>
+        <a class="address-item" href="mailto:info@sobaka.ge">
+          info@sobaka.ge
+        </a>
+      <p class="address-item">
+        наб. Принсенграхт 263-265, Амстердам
+      </p>
+    </address>
       <nav class="footer__center">
         <ul class="footer-list">
-          <li class="footer__links-list-item no-bullit">
-            <a class="no-underline" href="#0">главная</a>
+          <li class="footer__links-list-item">
+            <a class="no-underline" href="#header">главная</a>
           </li>
-          <li class="footer__links-list-item no-bullit">
-            <a href="#0">посмотреть лоты </a>
+          <li class="footer__links-list-item">
+            <a href="#lots">посмотреть лоты </a>
           </li>
-          <li class="footer__links-list-item no-bullit">
-            <a href="#0">об аукционе</a>
+          <li class="footer__links-list-item">
+            <a href="#about">об аукционе</a>
           </li>
         </ul>
       </nav>
@@ -180,5 +174,20 @@
         <a href="#0" style="width: 47px"><img src="./images/yt.svg" alt="Логотип Ютуб" /></a>
       </div>
     </footer>
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+          anchor.addEventListener('click', function (e) {
+              e.preventDefault();
+  
+              const targetId = this.getAttribute('href').substring(1);
+              const targetElement = document.getElementById(targetId);
+  
+              if (targetElement) {
+                  targetElement.scrollIntoView({ behavior: 'smooth' });
+              }
+          });
+      });
+  </script>
+  
   </body>
 </html>
