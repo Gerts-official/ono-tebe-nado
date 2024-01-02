@@ -10,8 +10,7 @@
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-    <!--Проверяй без пощады! ;)-->
-    <!--HEADER-->
+    <!-- HEADER -->
     <header class="header" id="header">
       <nav class="header__menu">
         <ul class="header__links-list">
@@ -43,40 +42,40 @@
         <p class="address-item">наб. Принсенграхт 263-265, Амстердам</p>
       </address>
     </header>
-    <main class="main">
-      <!--COVER-->
-      <section class="header__cover">
-        <h1 class="cover__text">
-          <span class="cover__text-accent cover__text-ono">
-            <span class="cover__text-left-one">О</span>
-            <span class="cover__text-left-two">НО</span>
+    <main>
+      <!-- COVER -->
+      <section class="cover">
+        <h1 class="cover__title">
+          <span class="cover__title-accent cover__title-ono">
+            <span class="cover__title-ono-o">О</span>
+            <span class="cover__title-ono-no">НО</span>
           </span>
-          <span class="cover__text-accent cover__text-tebe">
-            <span class="cover__text-tebe-te">те</span>
-            <span class="cover__text-tebe-be">бе</span>
+          <span class="cover__title-accent cover__title-tebe">
+            <span class="cover__title-tebe-te">те</span>
+            <span class="cover__title-tebe-be">бе</span>
           </span>
-          <span class="cover__text-accent cover__text-nado">
-            <span class="cover__text-nado-n">Н</span>
-            <span class="cover__text-nado-a">А</span>
-            <span class="cover__text-nado-d">Д</span>
-            <span class="cover__text-nado-o">О</span>
+          <span class="cover__title-accent cover__title-nado">
+            <span class="cover__title-nado-n">Н</span>
+            <span class="cover__title-nado-a">А</span>
+            <span class="cover__title-nado-d">Д</span>
+            <span class="cover__title-nado-o">О</span>
           </span>
         </h1>
-        <div class="cover__bottom">
-          <p class="cover__bottom-text">
+        <div class="cover__description">
+          <p class="cover__description-text">
             Аукцион вещей, в которые никто не
-            <span class="cover__bottom-text-one">верил</span>
+            <span class="cover__description-text-one">верил</span>
           </p>
-          <button class="cover__bottom-button">Сделать ставку</button>
+          <button class="cover__description-button">Сделать ставку</button>
         </div>
       </section>
-      <!--LOTS-->
+      <!-- LOTS -->
       <section class="lots" id="lots">
-        <h2 class="lots__header">Лоты</h2>
+        <h2 class="lots__heading">Лоты</h2>
         <div class="lots__cards">
           <article>
-            <a class="lots__card lots__card-one" href="#0">
-              <h3 class="lots__card-header">
+            <a class="lots__card lots__card-film" href="#0">
+              <h3 class="lots__card-title">
                 Фильм режиссёра, который бросил киношколу
               </h3>
               <p class="lots__card-text">
@@ -86,8 +85,8 @@
             </a>
           </article>
           <article>
-            <a class="lots__card lots__card-two" href="#0">
-              <h3 class="lots__card-header">
+            <a class="lots__card lots__card-book" href="#0">
+              <h3 class="lots__card-title">
                 Книга, где описан один скучный день из жизни рекламного агента
               </h3>
               <p class="lots__card-text">
@@ -101,8 +100,8 @@
             </a>
           </article>
           <article>
-            <a class="lots__card lots__card-three" href="#0">
-              <h3 class="lots__card-header">
+            <a class="lots__card lots__card-picture" href="#0">
+              <h3 class="lots__card-title">
                 Картина, которую повторит даже 5-летний сын маминой подруги
               </h3>
               <p class="lots__card-text">
@@ -118,17 +117,17 @@
       </section>
       <!--ABOUT-->
       <section class="about" id="about">
-        <div class="about__logo-cover">
+        <div class="about__logo">
           <img
-            class="about__logo-cover-img"
+            class="about__logo-image"
             src="./images/logo-white.svg"
             alt="Лого белыми буквами на черном фоне"
           />
         </div>
-        <div class="about__section">
-          <h2 class="about__section-header">Об аукционе</h2>
-          <div class="about__section-text">
-            <p class="about__section-text-margins">
+        <div class="about__column">
+          <h2 class="about__column-title">Об аукционе</h2>
+          <div class="about__column-text">
+            <p class="about__column-text-margins">
               Здесь вы не встретите очередное пафосное собрание невероятно
               дорогого антиквариата. Наши лоты вообще не должны были попасть ни
               на один аукцион. Потому что кому нужен дневник девочки-подростка
@@ -158,14 +157,14 @@
         <p class="address-item">наб. Принсенграхт 263-265, Амстердам</p>
       </address>
       <nav>
-        <ul class="footer__nav">
-          <li class="footer__nav-list">
+        <ul class="footer__menu">
+          <li class="footer__menu-list">
             <a class="no-underline" href="#header">главная</a>
           </li>
-          <li class="footer__nav-list">
+          <li class="footer__menu-list">
             <a href="#lots">посмотреть лоты </a>
           </li>
-          <li class="footer__nav-list">
+          <li class="footer__menu-list">
             <a href="#about">об аукционе</a>
           </li>
         </ul>
@@ -174,7 +173,7 @@
         <li>
           <a href="https://www.pinterest.com">
             <img
-              class="footer__socials-logos"
+              class="footer__socials-icon"
               src="./images/pinterest.svg"
               alt="Логотип Пинтрест"
             />
@@ -183,7 +182,7 @@
         <li>
           <a href="https://www.vk.com">
             <img
-              class="footer__socials-logos"
+              class="footer__socials-icon"
               src="./images/vk.svg"
               alt="Логотип ВК"
             />
@@ -192,7 +191,7 @@
         <li>
           <a href="https://www.youtube.com">
             <img
-              class="footer__socials-logos"
+              class="footer__socials-icon"
               src="./images/yt.svg"
               alt="Логотип Ютуб"
             />
