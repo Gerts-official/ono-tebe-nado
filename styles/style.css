@@ -1,3 +1,4 @@
+/* HEADER */
 .header {
   margin: 92px 24px;
   display: grid;
@@ -55,6 +56,7 @@
   font-style: normal;
 }
 
+/* COVER */
 .cover {
   min-height: 745px;
   background-image: url(../images/cover.jpg);
@@ -205,6 +207,7 @@
   text-decoration: none;
 }
 
+/* LOTS */
 .lots__card {
   margin-top: 26px;
   position: relative;
@@ -274,6 +277,7 @@
   text-underline-offset: 4px;
 }
 
+/* ABOUT */
 .about {
   display: grid;
   grid-template-columns: 1fr 1.98fr;
@@ -323,6 +327,7 @@
   gap: 25px;
 }
 
+/* FOOTER */
 .footer {
   margin: 182px 58px 89px 58px;
   display: grid;
